@@ -1,0 +1,1 @@
+window.NgajiDB=(()=>{const c=window.supabase.createClient(NGAJI_CONFIG.SUPABASE_URL,NGAJI_CONFIG.SUPABASE_PUBLISHABLE_KEY,{db:{schema:NGAJI_CONFIG.SCHEMA}});return{client:c,table:n=>c.from(n),rpc:(n,p)=>c.schema(NGAJI_CONFIG.SCHEMA).rpc(n,p),publicUrl:path=>c.storage.from(NGAJI_CONFIG.PUBLIC_BUCKET).getPublicUrl(path).data.publicUrl};})();
