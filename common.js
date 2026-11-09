@@ -1,1 +1,0 @@
-window.NgajiUI={toast(m){const e=document.querySelector('#toast');e.textContent=m;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),2200)},menu(){document.querySelector('#menuBtn')?.addEventListener('click',()=>document.querySelector('#siteNav').classList.toggle('open'))}};document.addEventListener('DOMContentLoaded',()=>NgajiUI.menu());
